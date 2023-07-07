@@ -1,0 +1,177 @@
+body{
+    background-color: black;
+}
+
+#pong-canvas {
+    background-color: #000;
+    width: 60%;
+    height: 30%;
+    margin: 10px auto;
+    display: block; 
+    border: 1px solid white;
+    transition: all 1s;
+}
+
+#pontos{
+    margin-top: 25px;
+    position: relative;
+    text-align: center;
+}
+
+#divs{
+    display: none;
+    position: relative;
+    top: 60%;
+    transform: translate(-0%, -50%);
+}
+
+.btn2{
+    background-image: linear-gradient(45deg, red, rgb(0, 0, 0));
+    font-size: 22px;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    padding: 3px;
+    margin: 15%;
+    margin-bottom: 5%;
+    border: 1px solid rgb(0, 0, 0);
+    position: fixed;
+    left: 70%;
+    top: 85%;
+    display: none;
+}
+
+
+
+#up{
+    border: 1px solid white;
+    width: 25%;
+    height: 100%;
+    position: relative;    
+    float:right;
+    top: 250px;
+    text-align: center;
+}
+
+.imgu{
+    padding: 5px;
+    width: 45%;
+    transform: rotate(90deg);
+}
+
+#down{
+    border: 1px solid white;
+    width: 25%;
+    height: 100%;
+    position: relative;    
+    float:left;
+    top: 250px;
+    text-align: center;
+}
+
+.imgd{
+    padding: 5px;
+    width: 45%;
+    transform: rotate(-90deg);
+}
+
+.container {
+    display: none;
+
+}
+
+#p1{
+    border: 1px solid white ;
+    border-radius:10px 0px 0px 10px ;
+    border-right: none;
+    position: relative;
+    width: 50%;
+    font-size: 350%;
+    height: 45%;
+    top: 300px;
+    display: none;
+}
+#p2{
+    border: 1px solid white ;
+    border-radius:0px 10px 10px 0px ;
+    border-left: none;
+    position: relative;
+    width: 50%;
+    font-size: 350%;
+    height: 45%;
+    top: 300px;
+    display: none;
+}
+
+p{
+    text-align: center;
+    margin: 75px;
+    font-size: 400%;
+    display: inline;
+    text-align: center;
+    position: relative;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+@media only screen and (max-width: 767px) {
+
+
+    #pong-canvas {
+        background-color: #000;
+        width: 95%;
+        position: relative;
+        top: 125px;
+        height: 65%;
+        display: block; 
+        border: 1px solid white;
+        transform: rotate(270deg);
+    }
+
+    p{
+        font-size: 95%;
+        margin: 10px;
+        position: relative;
+        top: 200px;
+    }
+
+    #divs{
+        display: block;
+    }
+
+    .btn2{
+
+        display: block;
+    }
+
+
+.container {
+    display: flex;
+
+}
+
+
+
+#p1{
+    border: 1px solid white ;
+    border-radius:10px 0px 0px 10px ;
+    border-right: none;
+    position: relative;
+    width: 50%;
+    font-size: 350%;
+    height: 45%;
+    top: 300px;
+    display: flex;
+}
+#p2{
+    border: 1px solid white ;
+    border-radius:0px 10px 10px 0px ;
+    border-left: none;
+    position: relative;
+    width: 50%;
+    font-size: 350%;
+    height: 45%;
+    top: 300px;
+    display: flex;
+}
+}

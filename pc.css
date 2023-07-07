@@ -1,0 +1,42 @@
+body{
+    background-color: black;
+}
+
+.icones{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    align-items: center;
+    text-align: center;
+    align-content: center;
+}
+
+.imagem{
+    height: 75px;
+    width: 75px;
+    border-radius: 10px;
+    border: 1px solid white;
+    border-radius: 15px;
+    transition: all 0.5s;
+    position: relative;
+
+}
+
+.imagem:hover{
+   transform: scale(1.1);
+   transition: all 0.5s;
+}
+P{
+    color: red;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+}
+
+h1{
+    color: red;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: relative;
+}
