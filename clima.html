@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3942/3942094.png">
+  <link rel="stylesheet" href="clima.css">
+  <title>CLIMA</title>
+</head>
+
+<body>
+  <div id="placa">
+
+    <input list="capitais" id="cidade" name="cidade">
+    <datalist id="capitais">
+
+        <option value="Rio Branco">Rio Branco</option>
+        <option value="Macapá">Macapá</option>
+        <option value="Manaus">Manaus</option>
+        <option value="Belém">Belém</option>
+        <option value="Porto Velho">Porto Velho</option>
+        <option value="Boa Vista">Boa Vista</option>
+      </optgroup>
+
+        <option value="Salvador">Salvador</option>
+        <option value="Fortaleza">Fortaleza</option>
+        <option value="Recife">Recife</option>
+        <option value="João Pessoa">João Pessoa</option>
+        <option value="São Luís">São Luís</option>
+        <option value="Teresina">Teresina</option>
+        <option value="Natal">Natal</option>
+        <option value="Aracaju">Aracaju</option>
+
+        <option value="Brasília">Brasília</option>
+        <option value="Goiânia">Goiânia</option>
+        <option value="Cuiabá">Cuiabá</option>
+        <option value="Campo Grande">Campo Grande</option>
+        <option value="Palmas">Palmas</option>
+
+        <option value="Vitória">Vitória</option>
+        <option value="Belo Horizonte">Belo Horizonte</option>
+        <option value="Rio de Janeiro">Rio de Janeiro</option>
+        <option value="São Paulo">São Paulo</option>
+
+        <option value="Curitiba">Curitiba</option>
+        <option value="Florianópolis">Florianópolis</option>
+        <option value="Porto Alegre">Porto Alegre</option>
+    </datalist>
+
+      <button onclick="vai()">🔎</button>
+
+      <h3 id="desc"></h3>
+      <p id="count"></p>
+      <p id="temps"></p>
+
+      <p id="humi"></p>
+      <div id="ceu">
+        <img src="" id="emoji">
+        <p id="nuvem"></p>
+      </div>
+  </div>
+
+  <a href="escolha.html"><button class="btn2">🏠</button></a>
+
+  <script src="clima.js"></script>
+</body>
+
+</html>

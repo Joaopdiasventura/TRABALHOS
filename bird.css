@@ -1,0 +1,110 @@
+body {
+    background-color: black;
+}
+
+.tudo {
+    width: 250px;
+    height: 575px;
+    border: 1px solid black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    align-self: center;
+    position: relative;
+    transform: translate(-50%, -0%);
+    left: 50%;
+    overflow: hidden;
+    background-color: white;
+    display: none;
+}
+
+.fundo {
+    width: 250px;
+    height: 575px;
+    position: absolute;
+    transform: translate(-50%, -0%);
+    left: 50%;
+
+}
+
+#bird {
+    width: 50px;
+    position: absolute;
+    transition: all 0.15s;
+    left: 30px;
+    transform: rotate(25deg);
+}
+
+#pontos{
+    left: 50%;
+    top: 15px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    display: flex;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .btn2{
+    background-image: linear-gradient(45deg, red, rgb(0, 0, 0));
+    font-size: 22px;
+    border-radius: 5px;
+    height: 40px;
+    width: 40px;
+    padding: 3px;
+    margin: 15%;
+    margin-bottom: 5%;
+    border: 1px solid rgb(0, 0, 0);
+    position: fixed;
+    left: 70%;
+    top: 85%;
+    display: none;
+}
+
+#cano1 {
+    position: absolute;
+    width: 50px;
+    bottom: 0;
+    animation: andar 2s infinite linear;
+}
+
+#cano2 {
+    position: absolute;
+    width: 50px;
+    transform: rotate(180deg);
+    top: 0;
+    animation: andar 2s infinite linear;
+}
+
+#chao {
+    width: 300px;
+    height: 50px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+}
+
+@keyframes andar {
+
+    to {
+        left: -20%;
+    }
+
+    from {
+
+        left: 100%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .btn2{
+     display: block;
+    }
+
+    .tudo{
+        display: flex;
+    }
+
+}
