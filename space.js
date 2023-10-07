@@ -65,7 +65,7 @@ function drawMuni() {
     contextoMuni.clearRect(0, 0, municao.width, municao.height); 
     let alt = 5;
     for (let i = 0; i < balas; i++) {
-        contextoMuni.fillStyle = "red";
+        contextoMuni.fillStyle = colorbullet;
         contextoMuni.fillRect(10, 0 + alt, 100, 3);
         alt = alt + 10;
     }
