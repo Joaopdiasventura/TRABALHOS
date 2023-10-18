@@ -15,9 +15,11 @@ async function vai() {
             alert("CIDADE NÃO ENCONTRADA");
         });
         
-    if (dados) {
+    if (dados.message != "city not found") {
 
-        document.getElementById("desc").innerHTML = `CLIMA EM ${cidade}`
+        console.log(dados);
+
+        document.getElementById("desc").innerHTML = `CLIMA EM ${dados.name}`
         document.getElementById("count").innerHTML = `NO PAÍS ${dados.sys.country}`
         document.getElementById("temps").innerHTML = `${Math.floor(dados.main.temp)}°C DE TEMPERATURA MÉDIA`;
         document.getElementById("humi").innerHTML = `${Math.floor(dados.main.humidity)}% DE HUMIDADE`;
@@ -29,10 +31,15 @@ async function vai() {
             " (proteja-se)";
         }
 
-        console.log(dados);
 
     } else {
-        alert("SELECIONE A CIDADE")
+
+        document.getElementById("desc").innerHTML = `CIDADE NÃO ENCONTRADA`
+        document.getElementById("count").innerHTML = ``
+        document.getElementById("temps").innerHTML = ``;
+        document.getElementById("humi").innerHTML = ``;
+        document.getElementById("emoji").src = ``;
+        document.getElementById("nuvem").innerHTML = "";
     }
 
 }
