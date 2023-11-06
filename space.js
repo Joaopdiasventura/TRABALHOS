@@ -245,6 +245,7 @@ updateGame();
         balas = 10;
         sec = 0;
         min = 0;
+        score = 0;
         drawMuni()
         player.x = canvas.width / 2 - player.width / 2;
         document.getElementById("over").innerHTML = "YOU LOSE";
