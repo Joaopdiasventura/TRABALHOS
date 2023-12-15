@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    cursor: crosshair;
+}
+#gameCanvas{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 2px;
+    display: block;
+    margin: 0 auto;
+}
+
+body{
+    background-color: black;
+    overflow: hidden;
+}
+
+p{
+    text-align: center;
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 4px;
+    margin: 2.5%;
+}
+
+#muni{
+    width: 200px;
+    height: 400px;
+    position: absolute;
+    left: 10%;
+    top: 50%;
+    transform: translate(-0%, -50%);
+}
+
+#time{
+    position: absolute;
+    left: 85%;
+    top: 45%;
+    transform: translate(-0%, -50%);
+}

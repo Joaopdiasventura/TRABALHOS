@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="cm.css">
+<link rel="icon" href="https://play-lh.googleusercontent.com/bVZTE6aOEFh8vgkoHbaG3OFxKQY_YqOdDZTnl0rLxrc_zNHfWs_1euZYqpbsKLdaauxX">
+<script src="cm.js"></script>
+    <title>CONVERSOR</title>
+</head>
+<body>
+    <div class="container">
+    <div>
+        <select  id="escolhae" onclick="direita()" class="seletor">
+            <option>Milímetros</option>
+            <option>Centímetros</option>
+            <option>Metros</option>
+            <option>Quilômetros</option>
+        </select>
+
+        <select id="escolhad" onclick="esquerda()" class="seletor">
+            <option>Milímetros</option>
+            <option>Centímetros</option>
+            <option>Metros</option>
+            <option>Quilômetros</option>
+            
+        </select>
+    </div>
+    <input type="number" id="esquerda"  placeholder="" onkeydown="direita()" onkeyup="direita()">
+    <input type="number" id="direita"  placeholder="" onkeydown="esquerda()" onkeyup="esquerda()">
+    <a href="escolha.html"><button class="btn2">🏠</button></a>
+</div>
+</body>
+</html>
