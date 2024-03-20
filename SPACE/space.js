@@ -136,6 +136,14 @@ function movePlayer() {
     if (isKeyPressed("ArrowRight") && player.x + player.width < canvas.width && game == true) {
         player.x += player.speed;
     }
+
+    if (isKeyPressed("ArrowLeft") && player.y + player.height > 0 && game == true) {
+        player.y -= player.speed;
+    }
+    if (isKeyPressed("ArrowRight") && player.y < canvas.height && game == true) {
+        player.y += player.speed;
+    }
+
     if (isKeyPressed("Enter") && game == false) {
         game = true;
     }
