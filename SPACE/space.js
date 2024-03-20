@@ -137,10 +137,10 @@ function movePlayer() {
         player.x += player.speed;
     }
 
-    if (isKeyPressed("ArrowLeft") && player.y + player.height > 0 && game == true) {
+    if (isKeyPressed("ArrowUp") && player.y + player.height > 0 && game == true) {
         player.y -= player.speed;
     }
-    if (isKeyPressed("ArrowRight") && player.y < canvas.height && game == true) {
+    if (isKeyPressed("ArrowDown") && player.y < canvas.height && game == true) {
         player.y += player.speed;
     }
 
